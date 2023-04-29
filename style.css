@@ -1,0 +1,53 @@
+body {
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#container > div {
+    display: block;
+    width: 500px;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1 {
+    background-color: orange;
+}
+
+.box2 {
+    background-color: skyblue;
+    font-size: 30px;
+    color: black;
+}
+
+.box3 {
+    background-color: purple;
+}
+
+.box4 {
+    background-color: cornflowerblue;
+}
+
+.box5 {
+    background-color: lightgray;
+}
+
+.clock {
+    font-size: 100px;
+    color: black;
+}
+

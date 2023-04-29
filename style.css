@@ -1,27 +1,29 @@
 body {
-    display: flex;
-    /* height: 100vh;
-    background: url(img/) no-repeat center;
-    background-size: cover; */
-}
-
-#container {
     position: relative;
     display: flex;
+    height: 100vh;
+    background: url(img/) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+#container {
+    position: absolute;
+    display: flex;
     flex-direction: column;
-    border: 2px solid black;
     overflow: hidden;
-    z-index: 99999;
 }
 
 #container > div {
-    position:absolute;
     display: block;
     width: 500px;
     height: 120px;
     margin: 10px;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
 }
 
 .box1 {
@@ -31,7 +33,7 @@ body {
 .box2 {
     background-color: skyblue;
     font-size: 30px;
-    color: black;
+
 }
 
 .box3 {
@@ -48,6 +50,6 @@ body {
 
 .clock {
     font-size: 100px;
-    color: black;
+
 }
 

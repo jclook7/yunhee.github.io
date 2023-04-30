@@ -14,6 +14,17 @@ img {
     width: 100%;
 }
 
+li {
+    list-style-type: decimal;
+    margin: 5px 0;
+    width: 280px;
+}
+
+button {
+    background-color: cornflowerblue;
+    transition-duration: 0.4s;
+}
+
 #container {
     position: absolute;
     display: flex;
@@ -69,6 +80,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     float: right;
 }
 
@@ -85,13 +97,14 @@ input {
 .login-button {
     display: block;
     cursor: pointer;
-    border: 0;
+    border: 1px solid white;
     font-weight: 600;
-    width: 250px;
+    width: 80px;
     transition: 0.4s;
-    text-align: right;
+    text-align: center;
     margin: 10px 0;
     font: 20px;
+    padding: 0;
   }
 
 .hidden {
@@ -103,6 +116,11 @@ input {
     display: block;
     color: white;
 }
+
+label {
+    font-weight: 600;
+    margin: 10px 0;
+  }
 
 
 

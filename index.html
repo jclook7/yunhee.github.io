@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
         <div id="container">
-
             <div id="box" class="box1">
                 <div class="log"></div>
                 <div class="clock">00:00:00</div>                
@@ -26,34 +26,33 @@
             </div>
             <div id="box" class="box3">
                 <form id="login-form">
-                    <input 
-                    class="login-button" 
-                    type="submit" 
-                    value="SIGN IN"
-                    />
                     <input
                       required
                       maxlength="15"
                       type="text"
                       placeholder="PLEASE ENTER YOUR NAME"
                     />
+                    <input 
+                    class="login-button" 
+                    type="submit" 
+                    value="SIGN IN"
+                    />
                   </form>
                   <h1 id="greeting" class="hidden"></h1>
             </div>
             <div id="box" class="box4">
                 <form id="todo-form">
-                    <div class="today-todo">
-                        <p>TODAY'S TODO</p>
-                    </div>
-                    <input 
+                    <label for="today-todo">Today's ToDo</label>
+                    <input class="today-todo"
                     type="text" 
                     placeholder="PLEASE WRITE A TODO and PRESS ENTER" 
                     required
                     />
                 </form>
-                <ul id="todo-list"></ul>
+                <ul id="todo-list">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                </ul>
             </div>
-
         </div>
 
     <script src="js/clock.js"></script>

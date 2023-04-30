@@ -1,22 +1,31 @@
 body {
+    border: 0;
+    margin: 0;
+    padding: 0;
     position: relative;
     display: flex;
+    justify-content: right;
     height: 100vh;
     background: url(img/) no-repeat center;
     background-size: cover;
     z-index: -1;
 }
-
+img {
+    width: 100%;
+}
 
 #container {
     position: absolute;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 #container > div {
+    position: relative;
     display: block;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
     width: 400px;
     height: auto;
     margin: 10px;
@@ -24,7 +33,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: right;
-
 }
 
 .box1 {
@@ -33,7 +41,7 @@ body {
 
 .box2 {
     border:1px solid skyblue;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .box3 {
@@ -42,6 +50,7 @@ body {
 
 .box4 {
     border:1px solid cornflowerblue;
+    text-align: left;
 }
 
 .clock {
@@ -62,11 +71,33 @@ input {
     color: white;
     margin: 5px;
     padding: 3px;
+    font: 20px;
 }
+
+.login-button {
+    display: block;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+  }
 
 .hidden {
     display: none;
   }
+
+.todo-list {
+    display: block;
+    color: white;
+    font: 22px;
+}
+
+
 
 
 

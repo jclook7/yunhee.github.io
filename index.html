@@ -9,38 +9,50 @@
 </head>
 <body>
         <div id="container">
+
             <div id="box" class="box1">
-                <div class="clock">00:00:00</div>
-            </div>
+                <div class="log"></div>
+                <div class="clock">00:00:00</div>                
+            </div>            
             <div id="box" class="box2">
                 <div class="weather">
-                    <span></span>
-                    <span></span>
+                    <p>weather & temperature:
+                        <span class="span1" style="display:inline"></span>
+                    </p>                    
+                    <p>@ 
+                        <span class="span2" style="display:inline"></span>
+                    </p>                    
                 </div>
             </div>
             <div id="box" class="box3">
-                <form id="todo-form">
-                    <input type="text" placeholder="Write a To Do and Press Enter" required />
-                  </form>
-                  <ul id="todo-list"></ul>
-            </div>
-            <div id="box" class="box4">
-                <form class="hidden" id="login-form">
+                <form id="login-form">
                     <input
                       required
                       maxlength="15"
                       type="text"
                       placeholder="What is your name?"
                     />
-                    <input type="submit" value="Log In" />
+                    <input type="submit" value="Log In"
+                    />
                   </form>
+                  <h1 id="greeting" class="hidden"></h1>
             </div>
-            <div id="box" class="box5">
+            <div id="box" class="box4">
+                <form id="todo-form">
+                    <input 
+                    type="text" 
+                    placeholder="Write a To Do and Press Enter" 
+                    required
+                    />
+                  </form>
+                  <ul id="todo-list"></ul>
             </div>
+
         </div>
 
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script> 
     <script src="js/background.js"></script> 
+    <script src="js/greetings.js"></script>
 </body>
 </html>

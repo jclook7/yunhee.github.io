@@ -11,3 +11,10 @@ function getClock() {
 
 getClock();
 setInterval(getClock, 1000);
+
+const log =  document.querySelector(".log");
+const date = new Date();
+const localeDate = date.toLocaleDateString();
+
+log.innerText = `${localeDate}`;
+
